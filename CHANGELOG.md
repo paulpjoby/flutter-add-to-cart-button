@@ -1,3 +1,8 @@
+## 0.0.6
+
+* Updated library api documentation.
+* Added working example
+
 ## 0.0.5
 
 * Updated library api documentation.

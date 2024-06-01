@@ -6,6 +6,9 @@ import 'package:flutter/material.dart';
 /// when tapped.
 ///
 class AddToCartCounterButton extends StatefulWidget {
+  /// The init value of the `AddToCartCounterButton`.
+  ///
+  /// This property determines the initial value taken by the counter.
   final int initNumber;
 
   /// The counterCallback of the `AddToCartCounterButton`.
