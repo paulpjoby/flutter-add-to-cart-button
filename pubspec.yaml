@@ -1,7 +1,7 @@
 name: add_to_cart_button
 description: "Add to cart button with counter"
-version: 0.0.1
-homepage:
+version: 0.0.2
+homepage: https://github.com/paulpjoby/flutter-add-to-cart-button.git
 
 environment:
   sdk: '>=3.4.1 <4.0.0'
@@ -52,3 +52,11 @@ flutter:
   #
   # For details regarding fonts in packages, see
   # https://flutter.dev/custom-fonts/#from-packages
+# This package supports all platforms listed below.
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:

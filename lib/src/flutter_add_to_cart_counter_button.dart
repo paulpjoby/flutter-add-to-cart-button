@@ -11,17 +11,17 @@ class AddToCartCounterButton extends StatefulWidget {
   final Color buttonIconColor;
   final Color buttonFillColor;
 
-  const AddToCartCounterButton(
-      this.initNumber,
-      this.counterCallback,
-      this.decreaseCallback,
-      this.increaseCallback,
-      this.minNumber,
-      this.maxNumber,
-      this.backgroundColor,
-      this.buttonIconColor,
-      this.buttonFillColor,
-      {super.key});
+  const AddToCartCounterButton({
+    required this.initNumber,
+    required this.counterCallback,
+    required this.decreaseCallback,
+    required this.increaseCallback,
+    required this.minNumber,
+    required this.maxNumber,
+    required this.backgroundColor,
+    required this.buttonIconColor,
+    required this.buttonFillColor,
+    super.key});
 
   @override
   _AddToCartCounterButtonState createState() => _AddToCartCounterButtonState();
