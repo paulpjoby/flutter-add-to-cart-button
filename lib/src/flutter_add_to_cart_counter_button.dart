@@ -1,16 +1,65 @@
 import 'package:flutter/material.dart';
 
+/// A stateful button widget that allows users to add items to the cart.
+///
+/// This widget displays a customizable button that increments the item count
+/// when tapped.
+///
 class AddToCartCounterButton extends StatefulWidget {
   final int initNumber;
+
+  /// The counterCallback of the `AddToCartCounterButton`.
+  ///
+  /// This method is a callback method with current value of the counter
+  /// as the argument, invoked whenever there is a change in counter
+  /// value due to any action.
   final Function(int) counterCallback;
+
+  /// The increaseCallback of the `AddToCartCounterButton`.
+  ///
+  /// This is callback method which is invoked whenever the counter value is
+  /// incremented.
+  ///
   final Function increaseCallback;
+
+  /// The decreaseCallback of the `AddToCartCounterButton`.
+  ///
+  /// This is callback method which is invoked whenever the counter value is
+  /// decremented.
+  ///
   final Function decreaseCallback;
+
+  /// The min value of the `AddToCartCounterButton`.
+  ///
+  /// This property determines min value that could be taken by the counter
   final int minNumber;
+
+  /// The max value of the `AddToCartCounterButton`.
+  ///
+  /// This property determines max value that could be taken by the counter
   final int maxNumber;
+
+  /// The background color of the `AddToCartCounterButton`.
+  ///
+  /// This property determines background color for the entire button
   final Color backgroundColor;
+
+  /// The icon color of the `AddToCartCounterButton`.
+  ///
+  /// This property determines foreground color for the icons of the counter
+  /// button and the button text
   final Color buttonIconColor;
+
+  /// The fill color of the `AddToCartCounterButton`.
+  ///
+  /// This property determines background color of the counter button
   final Color buttonFillColor;
 
+  /// Constructor for `AddToCartCounterButton`.
+  ///
+  /// This constructor initializes the counter button with the specified
+  /// background and fill colors and various other parameters.
+  /// Also allows you to define max and min limit for the counter.
   const AddToCartCounterButton(
       {required this.initNumber,
       required this.counterCallback,
@@ -115,7 +164,7 @@ class _AddToCartCounterButtonState extends State<AddToCartCounterButton> {
       IconData icon, void Function() onPressed) {
     return RawMaterialButton(
       materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-      constraints: BoxConstraints(minHeight: 30.0, minWidth: 30.0),
+      constraints: const BoxConstraints(minHeight: 30.0, minWidth: 30.0),
       elevation: 0.0,
       fillColor: _buttonFillColor,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),

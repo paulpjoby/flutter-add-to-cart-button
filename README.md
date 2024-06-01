@@ -11,7 +11,7 @@ Add this to your app's `pubspec.yaml`
 dependencies:
   flutter:
     sdk: flutter
-  add_to_cart_button: ^0.0.4
+  add_to_cart_button: ^0.0.5
 ```
 
 Simple usage in code

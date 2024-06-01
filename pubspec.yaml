@@ -1,6 +1,6 @@
 name: add_to_cart_button
 description: "Fully customisable add to cart button with counter for your app."
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/paulpjoby/flutter-add-to-cart-button.git
 
 environment:

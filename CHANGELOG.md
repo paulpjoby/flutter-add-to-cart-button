@@ -1,3 +1,7 @@
+## 0.0.5
+
+* Updated library api documentation.
+
 ## 0.0.4
 
 * Fixed package issues.
